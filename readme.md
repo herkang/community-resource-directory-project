@@ -2,7 +2,7 @@
 
 ### Overview
 
-A minority community service directory where user can create and account
+A minority community service directory where user can create an account
 to save resources.
 
 
@@ -23,13 +23,17 @@ to save resources.
 
 - Incoporate bootstrap 
 - Make user friendly 
-- Provid infromation about recognizing situation and game plan
+----> provide option to create account using OAuth
+
+- Provide information about recognizing situation and game plan
+----> direct to resource(s)
 
 #### 3.0
 
 - Provide national community resources
-- Google translate ooption when user enters a minority specific site
+- Google translate option when user enters a minority specific site
 
 ### Notes
 
-Replace this with anything else about the project
+- User can create account with username and password only in V.1
+----> Many minorites don't have email 

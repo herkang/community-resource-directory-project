@@ -6,7 +6,7 @@ db = SQLAlchemy()
 """ Creates a SQLAlchemy instance at the variable db """
 
 class User(db.Model):
-""" Creates a User """
+""" Creates an User object """
 
     __tablename__ = 'users'
 
@@ -20,3 +20,14 @@ class User(db.Model):
         """ Show info about user"""
         
         return f'<User user_id={self.user_id} username={self.username}>'
+
+class Resource(db.Model):
+""" Creates a resource object """
+
+    __tablename__ = 'resources'
+
+    resource_id = db.Column(db.Integer, 
+                            primary_key=True
+                            autoincrement=True)
+    resource_name = db.Column(db.String)
+    

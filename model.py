@@ -21,6 +21,16 @@ class User(db.Model):
         
         return f'<User user_id={self.user_id} username={self.username}>'
 
+class Resource_category(db.Model):
+""" Creates a resource category object"""
+
+    __tablename__ = 'resource_categories'
+
+    resource_category = db.Column(db.Integer, 
+                        primary_key=True, 
+                        autoincrement=True)
+    resource_category_name = db.Column(db.String)
+
 class Resource(db.Model):
 """ Creates a resource object """
 

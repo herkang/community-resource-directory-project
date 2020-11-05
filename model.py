@@ -78,3 +78,8 @@ class User_resource(db.Model):
     
     user = db.relationship('User', backref='users')
     resource = db.relationship('Resource', backref='resources')
+
+    saved_resources = db.Column(db.String)
+    #To do, find correct way to store list of resources
+
+    

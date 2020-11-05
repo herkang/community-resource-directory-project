@@ -8,9 +8,8 @@ to save resources.
 
 ### Technologies required (besides typical Hackbright tech stack)
 
-- Google Maps(Places)
-- Yelp API (ratings)
-- Beautiful Soup
+- Google Maps (Places)
+- Tabula (pdf to txt)
 
 #### MVP
 
@@ -21,11 +20,8 @@ to save resources.
 
 #### 2.0
 
-- Incoporate bootstrap 
-- Make user friendly 
-----> provide option to create account using OAuth
-
-- Provide information about recognizing situation and game plan
+-OAuth (connect to Gmail, Facebook)
+- Provide information about recognizing situation
 ----> direct to resource(s)
 
 #### 3.0
@@ -36,4 +32,4 @@ to save resources.
 ### Notes
 
 - User can create account with username and password only in V.1
-----> Many minorites don't have email 
+----> Many minorites don't have email or remember

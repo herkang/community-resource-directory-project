@@ -15,3 +15,8 @@ class User(db.Model):
                         autoincrement=True)
     username = db.Column(db.String, nullable=False, unique= True)
     password = db.Column(d.String)
+
+    def __repr__(self):
+        """ Show info about user"""
+        
+        return f'<User user_id={self.user_id} username={self.username}>'

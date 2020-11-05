@@ -75,3 +75,6 @@ class User_resource(db.Model):
                             autoincrement=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     resource_id = db.Column(db.Integer, db.ForeignKey('resources.resource_id'))
+    
+    user = db.relationship('User', backref='users')
+    resource = db.relationship('Resource', backref='resources')

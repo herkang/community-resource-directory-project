@@ -17,7 +17,7 @@ class User(db.Model):
     password = db.Column(d.String)
 
     def __repr__(self):
-        """ Show info about user"""
+        """ Show info about user """
         
         return f'<User user_id={self.user_id} username={self.username}>'
 
@@ -29,5 +29,16 @@ class Resource(db.Model):
     resource_id = db.Column(db.Integer, 
                             primary_key=True
                             autoincrement=True)
+    resource_category_id = db.Column(db.Integer, 
+                            )
     resource_name = db.Column(db.String)
+    # To do, add url to resource_name 
+
+    service = db.Column(db.String)
+
+    #phone_number = db.Column(db.String)
+    # To do, limit to specific whole number input
+
+    location = db.Column(db.String)
+    #To do, figure out how to put location in from txt file
     

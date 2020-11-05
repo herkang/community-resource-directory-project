@@ -64,3 +64,14 @@ class Resource(db.Model):
         """ Show user information """
         
         return f'<Resource resource_id={self.resource_id} resource name resource_name={self.resource_name}>'
+
+class User_resource(db.Model):
+""" Creates user's resource object"""
+
+    __tablename__ = 'user_resources'
+
+    user_resource = db.Column(db.Integer
+                            primary_key=True, 
+                            autoincrement=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
+    resource_id = db.Column(db.Integer, db.ForeignKey('resources.resource_id'))

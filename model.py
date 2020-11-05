@@ -30,7 +30,7 @@ class Resource(db.Model):
                             primary_key=True
                             autoincrement=True)
     resource_category_id = db.Column(db.Integer, 
-                            )
+                            db.ForeignKey('users.user_id'))
     resource_name = db.Column(db.String)
     # To do, add url to resource_name 
 
@@ -41,4 +41,6 @@ class Resource(db.Model):
 
     location = db.Column(db.String)
     #To do, figure out how to put location in from txt file
+    
+    resource = db.relationship('Resource_category', backref='resource_categories')
     

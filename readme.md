@@ -32,4 +32,4 @@ to save resources.
 ### Notes
 
 - User can create account with username and password only in V.1
-----> Many minorites don't have email or remember
+----> Many minorites don't have email or remember their default email logins

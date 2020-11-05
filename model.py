@@ -82,4 +82,7 @@ class User_resource(db.Model):
     saved_resources = db.Column(db.String)
     #To do, find correct way to store list of resources
 
-    
+    def __repr__(self):
+        """ Show saved resources """
+            return f'<Saved resources saved_resources={self.saved_resources}>'
+

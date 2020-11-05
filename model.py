@@ -17,7 +17,7 @@ class User(db.Model):
     password = db.Column(d.String)
 
     def __repr__(self):
-        """ Show info about user """
+        """ Show user informations """
         
         return f'<User user_id={self.user_id} username={self.username}>'
 
@@ -43,4 +43,8 @@ class Resource(db.Model):
     #To do, figure out how to put location in from txt file
     
     resource = db.relationship('Resource_category', backref='resource_categories')
-    
+
+    def __repr__(self):
+        """ Show user information """
+        
+        return f'<Resource resource_id={self.resource_id} resource name resource_name={self.resource_name}>'

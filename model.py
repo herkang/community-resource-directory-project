@@ -26,10 +26,16 @@ class Resource_category(db.Model):
 
     __tablename__ = 'resource_categories'
 
-    resource_category = db.Column(db.Integer, 
+    resource_category_id = db.Column(db.Integer, 
                         primary_key=True, 
                         autoincrement=True)
     resource_category_name = db.Column(db.String)
+
+    def __repr__(self):
+        """ Show user informations """
+        
+        return f'<Resource Category resource_category_id={self.resource_category_id} 
+        Resource category name resource_category_name={self.resource_category_name}>'
 
 class Resource(db.Model):
 """ Creates a resource object """

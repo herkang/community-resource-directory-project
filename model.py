@@ -1,7 +1,6 @@
 """ Models for minority community resource directory """
 
 from flask_sqlalchemy import SQLAlchemy 
-from sqlalchemy_utils import PhoneNumber 
 
 db = SQLAlchemy()
 """ Creates a SQLAlchemy instance at the variable db """

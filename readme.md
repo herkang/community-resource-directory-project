@@ -2,8 +2,7 @@
 
 ### Overview
 
-A minority community service directory where user can create an account
-to save resources.
+A minority community service directory where user can create an account to save resources.
 
 
 ### Technologies required (besides typical Hackbright tech stack)
@@ -20,7 +19,7 @@ to save resources.
 
 #### 2.0
 
--OAuth (connect to Gmail, Facebook)
+- OAuth (connect to Gmail, Facebook)
 - Provide information about recognizing situation
 ----> direct to resource(s)
 

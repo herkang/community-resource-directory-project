@@ -1,6 +1,7 @@
 """ Models for minority community resource directory """
 
 from flask_sqlalchemy import SQLAlchemy 
+from sqlalchemy_utils import PhoneNumber 
 
 db = SQLAlchemy()
 """ Creates a SQLAlchemy instance at the variable db """
@@ -49,6 +50,7 @@ class Resource(db.Model):
                             db.ForeignKey('users.user_id'))
     resource_name = db.Column(db.String)
     # To do, add url to resource_name 
+    # https://sqlalchemy-utils.readthedocs.io/en/latest/data_types.html#module-sqlalchemy_utils.types.phone_number
 
     service = db.Column(db.String)
 

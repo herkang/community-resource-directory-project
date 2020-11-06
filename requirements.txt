@@ -5,3 +5,12 @@ Jinja2==2.11.2
 itsdangerous==1.1.0
 psycopg2-binary==2.8.5
 pkg-resources==0.0.0
+
+#Flask
+#The webframework you’ll use to build your server
+
+#Flask-SQLAlchemy
+#A Flask plugin that allows you to easily use SQLAlchemy in your server routes.
+
+#psycopg2-binary
+#Allows SQLAlchemy to connect with PostgreSQL databases#
